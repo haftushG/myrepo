@@ -1,0 +1,5 @@
+---
+- hosts: rmhost
+  tasks:
+    - name: install vlc in remote machine
+    - apt: name=vlc update_cache=yes state present  
