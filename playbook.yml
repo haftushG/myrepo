@@ -5,3 +5,5 @@
       apt: name=vlc update_cache=yes state=present  
     - name: install nginx
       apt: name=nginx update_cache=yes state=present
+    - name: create directory on the remote machine
+      file: name=myFolder  state=directory
